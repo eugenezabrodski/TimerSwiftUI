@@ -11,6 +11,10 @@
 		63007ABE29A23AB900DB5DCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63007ABD29A23AB900DB5DCE /* ContentView.swift */; };
 		63007AC029A23ABA00DB5DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63007ABF29A23ABA00DB5DCE /* Assets.xcassets */; };
 		63007AC329A23ABA00DB5DCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63007AC229A23ABA00DB5DCE /* Preview Assets.xcassets */; };
+		63007ACA29A23D3500DB5DCE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63007AC929A23D3400DB5DCE /* UserManager.swift */; };
+		63007ACC29A23F4600DB5DCE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63007ACB29A23F4600DB5DCE /* RegisterView.swift */; };
+		63007ACE29A2411900DB5DCE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63007ACD29A2411900DB5DCE /* TimerView.swift */; };
+		63007AD029A242DD00DB5DCE /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63007ACF29A242DD00DB5DCE /* TimerCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		63007ABD29A23AB900DB5DCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		63007ABF29A23ABA00DB5DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63007AC229A23ABA00DB5DCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63007AC929A23D3400DB5DCE /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		63007ACB29A23F4600DB5DCE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		63007ACD29A2411900DB5DCE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		63007ACF29A242DD00DB5DCE /* TimerCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				63007ABB29A23AB900DB5DCE /* TimerSwiftUIApp.swift */,
 				63007ABD29A23AB900DB5DCE /* ContentView.swift */,
+				63007ACD29A2411900DB5DCE /* TimerView.swift */,
+				63007ACB29A23F4600DB5DCE /* RegisterView.swift */,
+				63007AC929A23D3400DB5DCE /* UserManager.swift */,
+				63007ACF29A242DD00DB5DCE /* TimerCounter.swift */,
 				63007ABF29A23ABA00DB5DCE /* Assets.xcassets */,
 				63007AC129A23ABA00DB5DCE /* Preview Content */,
 			);
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63007ACE29A2411900DB5DCE /* TimerView.swift in Sources */,
+				63007ACA29A23D3500DB5DCE /* UserManager.swift in Sources */,
+				63007ACC29A23F4600DB5DCE /* RegisterView.swift in Sources */,
 				63007ABE29A23AB900DB5DCE /* ContentView.swift in Sources */,
+				63007AD029A242DD00DB5DCE /* TimerCounter.swift in Sources */,
 				63007ABC29A23AB900DB5DCE /* TimerSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
