@@ -4,10 +4,11 @@
 //
 //  Created by Eugene on 19/02/2023.
 //
-
+import SwiftUI
 import Combine
 
-final class UserManager: ObservableObject {
+class UserManager: ObservableObject {
     @Published var isRegister = false
-    var name = ""
+    @AppStorage("userName") var userName: String = ""
+    //var name: String = ""
 }

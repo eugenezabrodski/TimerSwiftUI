@@ -14,7 +14,7 @@ struct TimerView: View {
     
     var body: some View {
         VStack {
-            Text("Hello me dear \(user.name)")
+            Text("Hello my dear \(user.userName)")
                 .font(.title)
                 .offset(x: 0, y: 100)
             Text("\(timer.counter)")
@@ -23,8 +23,23 @@ struct TimerView: View {
             Spacer()
             ButtonView()
                 .environmentObject(timer)
-        }
+            Spacer()
+            NavigationLink(destination: RegisterView()) {
+                Button("LogOut") {
+                    user.userName = ""
+                    user.isRegister.toggle()
+                }
+                .font(.title)
+                .foregroundColor(.white)
+                .frame(width: 200, height: 60)
+                .background(Color.orange)
+                .cornerRadius(20)
+                .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.black, lineWidth: 4))
+            }
     }
+ }
 }
 
 struct ButtonView: View {

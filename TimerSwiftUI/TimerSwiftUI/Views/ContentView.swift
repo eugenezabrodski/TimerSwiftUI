@@ -12,11 +12,13 @@ struct ContentView: View {
     @EnvironmentObject var user: UserManager
     
     var body: some View {
-        Group {
-            if user.isRegister {
-                TimerView()
-            } else {
-                RegisterView()
+        NavigationView {
+            Group {
+                if !user.userName.isEmpty {
+                    TimerView()
+                } else {
+                    RegisterView()
+                }
             }
         }
     }

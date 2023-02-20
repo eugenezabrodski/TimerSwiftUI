@@ -13,19 +13,25 @@ struct RegisterView: View {
     @State private var name = ""
     
     var body: some View {
-        VStack(spacing: 25) {
-            TextField("Enter your name", text: $name)
-                .multilineTextAlignment(.center)
-            Button(action: registerUser) {
-                Image(systemName: "checkmark.circle")
-                Text("Ok")
+            VStack(spacing: 25) {
+                HStack {
+                    TextField("Enter your name", text: $name)
+                        .multilineTextAlignment(.center)
+                    Text("\(name.count)")
+                        .padding()
+                }
+                Button(action: registerUser) {
+                    Image(systemName: "checkmark.circle")
+                    Text("Ok")
+                
+                }
             }
-        }
+
     }
     
     private func registerUser() {
         if !name.isEmpty {
-            user.name = name
+            user.userName = name
             user.isRegister.toggle()
         }
     }

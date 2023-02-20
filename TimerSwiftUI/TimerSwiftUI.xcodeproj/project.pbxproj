@@ -60,11 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				63007ABB29A23AB900DB5DCE /* TimerSwiftUIApp.swift */,
-				63007ABD29A23AB900DB5DCE /* ContentView.swift */,
-				63007ACD29A2411900DB5DCE /* TimerView.swift */,
-				63007ACB29A23F4600DB5DCE /* RegisterView.swift */,
-				63007AC929A23D3400DB5DCE /* UserManager.swift */,
-				63007ACF29A242DD00DB5DCE /* TimerCounter.swift */,
+				63007AD229A3755900DB5DCE /* Views */,
+				63007AD129A3754C00DB5DCE /* Data Model */,
 				63007ABF29A23ABA00DB5DCE /* Assets.xcassets */,
 				63007AC129A23ABA00DB5DCE /* Preview Content */,
 			);
@@ -77,6 +74,25 @@
 				63007AC229A23ABA00DB5DCE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63007AD129A3754C00DB5DCE /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				63007AC929A23D3400DB5DCE /* UserManager.swift */,
+				63007ACF29A242DD00DB5DCE /* TimerCounter.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		63007AD229A3755900DB5DCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63007ABD29A23AB900DB5DCE /* ContentView.swift */,
+				63007ACD29A2411900DB5DCE /* TimerView.swift */,
+				63007ACB29A23F4600DB5DCE /* RegisterView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
